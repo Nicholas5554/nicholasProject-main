@@ -1,5 +1,5 @@
 
-see the project at this link : https://nicholas5554.github.io/nicholasProject/
+see the project at this link : https://nicholas5554.github.io/nicholasProject-main/
 
 Welcome to my portfolio! This collection showcases my skills in web development using HTML, CSS with Sass, and Bootstrap, along with JavaScript. Each project demonstrates a unique aspect of my capabilities and creativity.
 
