@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.title>h1 {
+    font: normal normal normal 160px/200px Satisfy;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+    margin-top: 30px;
+}
+
+.title>h2 {
+    font: normal normal normal 32px/38px Varela Round;
+    color: #FFFFFF;
+}
+
+.title>p {
+    font: normal normal normal 16px/20px Varela Round;
+    color: #F9F9F9;
+}
+
+#form {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+div #name {
+    margin-left: 20px;
+}
+
+.formInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.formInfo>input {
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    width: 400px;
+    height: 50px;
+}
+
+input[type="submit"] {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #1C1C1C;
+    width: 160px;
+}
+
+label {
+    font: normal normal normal 16px/20px Varela Round;
+    color: #F9F9F9;
+    text-align: right;
+}
+
+@media (max-width:800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .title>h1 {
+        font: normal normal normal 60px/86px Satisfy;
+        margin-bottom: 15px;
+    }
+
+    .title>h2 {
+        font: normal normal normal 18px/22px Varela Round;
+        margin-bottom: 15px;
+    }
+
+    .title>p {
+        font: normal normal normal 16px/20px Varela Round;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 119px;
+        margin-bottom: 100px;
+    }
+
+    div #name {
+        margin-left: 0;
+    }
+
+    .formInfo>input {
+        width: 320px;
+        height: 36px;
+    }
+}

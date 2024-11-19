@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  position: relative;
+  width: 71vw;
+  height: 85vh;
+}
+
+.image {
+  width: 100vw;
+  height: 53.5vh;
+  position: absolute;
+}
+
+.image>img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 480px;
+  color: #fff;
+  background-color: rgba(26, 26, 26, 0.831372549);
+  opacity: 1;
+}
+
+.form-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form-title>h1 {
+  font: normal normal 900 26px/35px heebo;
+}
+
+.form-title>p {
+  font: normal normal normal 16px/20px heebo;
+  width: 325px;
+  direction: rtl;
+  margin-top: 10px;
+}
+
+.form-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-top: 7px;
+}
+
+.form-item label {
+  font: normal normal bold 12px/24px Heebo;
+}
+
+.form-item input {
+  width: 300px;
+  height: 40px;
+  border: #D31C75 1px solid;
+}
+
+.form-item input[type=submit] {
+  color: #fff;
+  background-color: #D31C75;
+  font: normal normal bold 17px/30px Heebo;
+  border: none;
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 180px;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image {
+    width: 100vw;
+    height: 34.5vh;
+  }
+
+  .form {
+    width: 350px;
+    height: 640px;
+    margin-bottom: 30px;
+  }
+
+  .form-title {
+    margin-bottom: 10px;
+  }
+
+  .form-title>h1 {
+    font: normal normal 900 28px/30px Heebo;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .form-title>p {
+    font: normal normal normal 15px/22px Heebo;
+    width: 240px;
+    margin-top: 0px;
+  }
+
+  .form-item {
+    gap: 1px;
+    row-gap: 10px;
+  }
+
+  .form-item #name {
+    margin-bottom: 25px;
+  }
+
+  .form-item label {
+    font: normal normal bold 16px/30px Heebo;
+    height: 20px;
+    /*  background-color: crimson; */
+  }
+
+  .form-item input {
+    width: 270px;
+    height: 35px;
+    border: #D31C75 1px solid;
+  }
+
+  .form-item input[type=submit] {
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 170px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user management</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="./script.js" async defer></script>
+</head>
+
+<body dir="rtl">
+
+    <div id="main-container">
+        <div id="form-title">
+            <h2>login page</h2>
+            <p>to log in fill in the form bellow</p>
+        </div>
+
+        <form id="register">
+            <div class="form-control">
+                <label for="fname">first name</label>
+                <input type="text" id="fname" required>
+            </div>
+
+            <div class="form-control">
+                <label for="lname">last name</label>
+                <input type="text" id="lname" required>
+            </div>
+
+            <div class="form-control">
+                <label for="email">email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-control">
+                <label for="password">password</label>
+                <input type="password" id="password" required>
+            </div>
+
+            <div class="form-control">
+                <input type="submit" id="btn" value="send" required>
+            </div>
+        </form>
+
+    </div>
+
+    <br>
+
+    <table id="userTable">
+        <thead>
+            <tr id="Table-row">
+                <th id="first-name-row">First Name</th>
+                <th id="last-name-row">Last Name</th>
+                <th id="email-row">Email</th>
+                <th id="password-row">Password</th>
+                <th id="log-row">login/logout</th>
+                <th id="delete-row">delete user</th>
+                <th id="change-row">change user</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody"></tbody>
+    </table>
+
+
+</body>
+
+</html>

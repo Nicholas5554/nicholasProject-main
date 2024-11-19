@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #aaaaaa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #969696;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #121212;
+}
+
+#container-main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #121212;
+}
+
+#top-manu {
+    width: 100vw;
+    height: 130px;
+    display: flex;
+    background-color: #212121;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+#top-manu>h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: end;
+    width: 650px;
+}
+
+.dropdown {
+    width: 125px;
+    height: 70px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.drop-btn {
+    background-color: #777777;
+    color: white;
+    width: 125px;
+    height: 70px;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+}
+
+.dropdown:hover .difficulty {
+    display: block;
+}
+
+.dropdown:hover .operators {
+    display: block;
+}
+
+.difficulty,
+.operators {
+    display: none;
+    position: absolute;
+    background-color: #a5a5a5;
+    min-width: 200px;
+}
+
+.difficulty a {
+    color: white;
+    padding: 6px 10px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.difficulty a:hover {
+    background-color: #858585;
+}
+
+.operators a {
+    color: white;
+    padding: 6px 10px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.operators a:hover {
+    background-color: #858585;
+}
+
+#math-problem {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 1100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282828;
+}
+
+.input-holder {
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#userChack {
+    width: 150px;
+    height: 55px;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #34e61d;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#userChack:hover {
+    background-color: #2ec919;
+}
+
+#userChack:active {
+    background-color: #27ac16;
+}
+
+#answer-area {
+    width: 200px;
+    height: 55px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#problem-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 500px;
+    height: 170px;
+    font-size: 85px;
+    text-align: center;
+    background-color: #404440;
+}
+
+#score {
+    width: 600px;
+    height: 50px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+#dataTable {
+    width: 750px;
+    height: 230px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    background-color: #282828;
+    margin-top: 10px;
+}
+
+#Table-row {
+    width: 500px;
+    height: 20px;
+}
+
+th {
+    width: 125px;
+    height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    #container-main {
+        width: 80vw;
+    }
+
+    #top-manu {
+        width: 370px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #top-manu>h1 {
+        width: 125px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .dropdown {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .drop-btn {
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #math-problem {
+        width: 370px;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-holder {
+        width: 340px;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #problem-area {
+        width: 200px;
+        height: 60px;
+        font-size: 35px;
+    }
+
+    #answer-area {
+        width: 70px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    #userChack {
+        width: 70px;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    #score {
+        width: 350px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #dataTable {
+        width: 370px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studying calculus project</title>
+    <script src="./script.js" async defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="container-main">
+
+        <div id="top-manu">
+            <h1>studying calculus game!</h1>
+            <div class="dropdown">
+                <button class="drop-btn">select level</button>
+                <div class="difficulty">
+                    <a id="level-1">level 1 (1-10)</a>
+                    <a id="level-2">level 2 (10-100)</a>
+                    <a id="level-3">level 3 (100-1000)</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="math-problem">
+            <form class="input-holder">
+                <input type="button" value="check result" id="userChack" onclick="checkUser()">
+                <input type="number" id="answer-area" placeholder="answer here" required>
+                <h2 id="problem-area"></h2>
+            </form>
+        </div>
+
+        <p id="score"></p>
+
+        <table id="dataTable">
+            <thead>
+                <tr id="Table-row">
+                    <th id="exercise">exercise</th>
+                    <th id="right-answer">right answer</th>
+                    <th id="user-answer">your answer</th>
+                    <th id="current-points">current points</th>
+                </tr>
+            </thead>
+            <tbody id="dataTableBody"></tbody>
+        </table>
+
+    </div>
+
+</body>
+
+</html>

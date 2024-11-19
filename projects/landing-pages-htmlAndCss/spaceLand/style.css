@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1f1f;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-con {
+    width: 100vw;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("./project-images/desert.jpg");
+    background-size: cover;
+}
+
+.title-con>h1 {
+    font: normal normal bold 86px/113px Assistant;
+    color: #F6F6F6;
+    margin-top: 35px;
+}
+
+.title-con>p {
+    font: normal normal normal 20px/26px Assistant;
+    color: #F6F6F6;
+}
+
+.form {
+    width: 75vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.form-item>label {
+    font: normal normal bold 16px/21px Assistant;
+    text-align: right;
+    color: #F6F6F6;
+}
+
+.form-item>input {
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-bottom: #b9b9b9 4px solid;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+}
+
+input[type="submit"] {
+    background-color: #454543;
+    font: normal normal bold 22px/30px Assistant;
+    letter-spacing: 0.33px;
+    color: #F6F6F6;
+    width: 160px;
+    margin-top: 25px;
+    margin-right: 25px;
+    text-align: center;
+    border-bottom: none;
+}
+
+@media(max-width:800px) {
+    .title-con {
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-image: url("project-images/desert.jpg");
+        background-size: cover;
+    }
+
+    .title-con>h1 {
+        font: normal normal bold 32px/70px Assistant;
+        color: #F6F6F6;
+        margin-top: 50px;
+    }
+
+    .title-con>p {
+        font: normal normal normal 14px/20px Assistant;
+        text-align: center;
+        color: #F6F6F6;
+        width: 275px;
+    }
+
+    .form {
+        width: 75vw;
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+        text-align: right;
+        flex-direction: column;
+    }
+
+    .form-item>label {
+        font: normal normal bold 10px/14px Heebo;
+        text-align: right;
+        color: #F6F6F6;
+    }
+
+    .form-item>input {
+        width: 280px;
+        height: 35px;
+        border: none;
+        border-bottom: #b9b9b9 4px solid;
+        background: #F6F6F6 0% 0% no-repeat padding-box;
+    }
+
+    input[type="submit"] {
+        background-color: #454543;
+        font: normal normal bold 14px/19px Heebo;
+        letter-spacing: 0.33px;
+        color: #F6F6F6;
+        width: 280px;
+        margin-left: 23px;
+        height: 35px;
+        text-align: center;
+        border-bottom: none;
+    }
+}
